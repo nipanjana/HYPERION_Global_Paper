@@ -123,8 +123,8 @@
 %%
 %% If you wish, you may supply running head information, although
 %% this information may be modified by the editorial offices.
-\shorttitle{Sample article}
-\shortauthors{Schwarz et al.}
+\shorttitle{Pattern detection }
+\shortauthors{Patra et al.}
 %%
 %% You can add a light gray and diagonal water-mark to the first page 
 %% with this command:
@@ -265,20 +265,39 @@ miscellaneous --- catalogs --- surveys}
 %% to the KEY in the \bibitem in the reference list below. 
 
 \section{Introduction} \label{sec:intro}
+Separation of fundamental spectral shapes in the precision measurements of the radio background using total power radio telescopes is the key to identifying any spectral features that is of cosmological origin such as the redshifted 21cm signal monopole. %and redshifted radio recombination lines. 
+These shapes arises due to the intrinsic nature of the true sky signal as well as the instrument response that are degenerated with each other. There are primarily two polynomial based modelling approaches to describe  foreground spectral shape. The first one is based upon fitting polynomials of low orders to currently available all-sky maps such as the Global Sky Model (GSM). This, however, is extremely limited in spectral and spatial resolution due to which may entirely miss any information on spectral distortion at intermediate frequencies. The second approach, we find more astrophysically motivated models derived from the fundamental radiative processes that results in the radio sky such spectrum (Global Model for the Radio Sky Spectrum-GMOSS) which best describes the currently available all-sky maps with $6-17\%$ fractional deviations. It is impossible to conclude whether such deviations are imparted by the imperfect choice of modelling basis or measurement errors of the data set. Similar dichotomy holds in modelling instrument response. A strument response is often   
+
+
+
+
+Although the true basis to describe the foreground spectral shapes are unknown, the 
+
+instrumental design, analysis and data modelling strategy varies between experiments resulting in data sets that may not be able to corroborate multiple findings.  In this work we present that the interpretations of the radio background measurements are highly susceptible to the method of shape separation. We also show that in contrary to popular choice of describing the forground and instrument shapes by polynomial basis function, the fundamental shapes that can describe these two needs to be identified from the dataset itself. 
+
+
+ power spectrum at low radio frequencies are only known to us within the accuracy of the available all sky measurements. characterization of instrument response up to an arbitrary accuracy to is also 
+
+The choice of the basis to describe the fundamental shapes present in a dataset is critical.  For example,  While the shape of the foreground emission is only 
+
+
+Any basis function that you chose to describe your foreground, such as a polynomials or bessel functions or power law or whatso ever , it is going to take out a part of you global signal 
+hence all we can expect out of a global experiment is a detection and not a measurement ... 
+and we need to show how the choice of the basis functions effects the detectability of the global signal 
 
 \section{Global EoR data simulations from all-sky models} \label{sec:style}
 \subsection{Foreground model description}
 \begin{enumerate}
 \item
-1. Details of all-sky model generation: GSM, GMOSS, Avery-Adrian: 
+Details of all-sky model generation: GSM, GMOSS, Avery-Adrian: 
 \item
-2.References to all the papers.
+References to all the papers.
 \item
-3.pros and cons of each model.
+pros and cons of each model.
 \item
-4. Three different sky models as image.
+Three different sky models as image.
 \item
-5. Present HYPERION beam and the beam model and justify.
+Present HYPERION beam and the beam model and justify.
 \end{enumerate}
 
 \subsection{EoR model description}
@@ -286,7 +305,15 @@ miscellaneous --- catalogs --- surveys}
 
 \subsection{Simulated data}
 \section{Finding basis for data description:} 
+
 \label{sec:floats}
+
+\begin{equation}
+%T_{21}(z) \propto 0.023 K * x_{HI}(z)* {0.15\over \Omega_{m}}*({1+z \over 10})^{0.5}* {\Omega_{b}h \over 0.02} * {T_{s}(z) - T_{R}(z) \over T_{s}(z) }
+T_{excess} = T_{0}*({\nu \over 1420})^{-2.58} \\
+%T_{gal} = T_{0}*({\nu \over 1420})^{-2.58}
+%T_{A}(\nu) = Texgal(\nu)+ Tgal(\nu)*csc|b|
+\end{equation}
 
 \section{Conclusion}
 \end{document}
